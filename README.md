@@ -1,8 +1,8 @@
-# Monorepo Health
+# Monorepo Debt Manager
 
 ## Descrição
 
-Este projeto é um monorepo para uma aplicação de saúde que inclui uma API, um front-end web e um aplicativo móvel. Utiliza `pnpm` para gerenciamento de pacotes e `Docker` para a API.
+Este projeto é um monorepo para uma aplicação de gerenciamento de dívidas que inclui uma API, um front-end web. Utiliza `pnpm` para gerenciamento de pacotes e `Docker` para a Database.
 
 ## Requisitos
 
