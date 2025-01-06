@@ -1,0 +1,24 @@
+{
+  "name": "monorepo-debt-manager",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "pnpm --filter @api start:dev",
+    "web": "pnpm --filter @web dev",
+    "api:test": "pnpm --filter @api test",
+    "web:test": "pnpm --filter @web test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

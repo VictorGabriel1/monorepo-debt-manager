@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  dcs-postgres:
+    image: postgres:16.3
+    container_name: debt-manager-postgres-dev
+    restart: always
+    environment:
+      POSTGRES_DB: debt-manager
+      POSTGRES_USER: debt-manager-dev
+      POSTGRES_PASSWORD: debt-manager-pass2025
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database/db-init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database/db-seed.sql:/docker-entrypoint-initdb.d/seed.sql
